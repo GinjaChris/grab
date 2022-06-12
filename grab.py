@@ -51,7 +51,7 @@ def main():
         print("\n","Attempting to grab banners, headers and certs from common ports on "+IP)
 
         PortList = [21,22,23,25,80,110,143,443]
-        PortNames = {21: "ftp", 22: "ssh", 23: "telnet", 25: "smtp", 80: "http", 110: "pop3", 143: "imap", >
+        PortNames = {21: "ftp", 22: "ssh", 23: "telnet", 25: "smtp", 80: "http", 110: "pop3", 143: "imap", 443: "https"}
 
         for port in PortList:
                 banner = ReturnBanner(dest, port)
